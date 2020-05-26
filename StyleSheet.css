@@ -1,0 +1,186 @@
+﻿body { /*Contient tout le corps de l'article*/
+    background-image: url("Images/ImageBackground/BGCIRCUIT3480.png"); /*image de fond qui se voit autour du corps du site*/
+    width: 90%; /*Largeur qui permet de voir les fond sur les cotés du site et de metre en valeur le corps*/
+    min-height: 800px; /*Hauteur minimale qui fixe le design du corps du site*/
+    margin: auto; /*Permet de centrer le corps du site sur l'écran*/
+
+    color: black; /*Couleur de la police*/
+    font-family: 'Comic Sans MS'; /*Style de la police*/
+
+    display: flex; /*Disposition avec la méthode Flexbox*/
+    flex-direction: column; /*Axe principal d'alignement : vertical*/
+    align-items: center; /*Axe secondaire d'alignement : centre*/
+}
+header { /*Contient le titre du site*/
+    color: white;
+    width: 100%;
+    min-height: 100px; /*Hauteure minimale qui peut s'agrandir quand la fenêtre est rédiute en largeur*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1 { /*Réservé au titre du site*/
+    border: 7px ridge #0ee2ba;
+    font-size: 350%;
+    background-color: #006951;
+    text-align: center;
+    width: 70%;
+    text-decoration: none;
+}
+.Corps { /*Corps principal du site avec la navigation et les articles*/
+    border: 7px ridge #333333; /*Bordure en relief gris foncé*/
+    background-color: #b3b3b3; /*Couleur du fond : blanc à 20%*/
+    min-width: 100%;
+    min-height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+nav { /*Menu de navigation qui permet d'accéder aux différents articles*/
+    background-color: #333333; /*Couleur du fond : blanc à 20%*/
+    font-size: 130%; /*Taille du texte*/
+    text-align: left; /*Alignement du texte à gauche*/
+    padding: 10px 30px 10px 30px; /*Marge intérieure : dessus, droite, bas, gauche*/
+    min-height: 400px; /*Hauteur minimale du bloc*/
+    min-width: 360px; /*Largeur minimale du bloc*/
+    max-width: 360px;
+    display: flex; /*Disposition avec la méthode Flexbox*/
+    flex-direction: column; /*Axe principal d'alignement : vertical*/
+    justify-content: space-around; /*Espace entre les blocs sur l'axe principal*/
+    align-items: flex-start; /*Axe secondaire d'alignement : droite*/
+}
+a { /*Personnalisation des liens*/
+    color: white; /*Couleur du texte*/
+    text-decoration: none; /*Suppression du soulignage automatique*/
+}
+.Articles { /*Partie principale de la page qui contient les articles*/
+    min-width: 400px; /*Epaisseur minimale : permet de s'adapter aux différentes tailles d'écrans*/
+    min-height: 500px; /*Hauteur minimale : permet de s'adapter aux différentes tailles d'écrans*/
+    padding: 10px 30px 10px 30px; /*Marge intérieure : dessus, droite, bas, gauche*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap; /*Permet le retour à la ligne automatique pour les écrans moins large*/
+}
+.Accueil {
+    border: 3px outset #999999; /*Bordure qui met en relief les différents sujets de la page d'accueil*/
+    color: black;
+    background-color: #cccccc;
+    box-shadow: #333333 5px 5px; /*Ombre autour du cadre qui accentue le relief*/
+
+    width: 350px;
+    min-height: 200px;
+    margin: 30px; /*Marge extérieure qui permet de garder une certaine distance entre les blocs*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+h4 { /*Titre dans les blocs de la page d'accueil*/
+    font-size: 120%; /*Taille de la police : en % car cela s'adapte aux différentes tailles d'écrans*/
+    background-color: none;
+    text-align: center; /*Alignement du texte au centre du bloc*/
+    font-style: oblique; /*Met en italic la police*/
+    font-weight: normal; /*Enlève le gras qui est initialement prévu en h4*/
+    min-height: 20px;
+    padding: 0px 15px 0px 15px; /*Marge intérieure : dessus, droite, bas, gauche ; pour être sûr que le titre ne touche pas les bords du blocs*/
+}
+.Image {
+    padding: 5px; /*Centrage de l'image qui ne se fait pas par défaut*/
+}
+.TitreArticle { /*Titre des articles en haut du corps*/
+    color: black;
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h2 { /*Personnalisation de la police de titre d'article*/
+    font-size: 300%;
+    background-color: none;
+    text-align: center;
+    width: 100%;
+    text-decoration: underline; /*Ajoute le soulignement*/
+}
+.CorpsArticle { /*Corps de l'article dans lequel se trouve les différente sections*/
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /*Permet de garder l'espace entre les parties de l'article*/
+    align-content: space-around;
+    flex-wrap: wrap
+}
+section { /*Section de l'articel avec son sous-titre et son paragraphe expliquatif*/
+    border: 3px outset #999999; /*Même mise en valeur que sur la page d'accueil*/
+    background-color: #cccccc;
+    box-shadow: #333333 5px 5px;
+    min-width: 300px;
+    min-height: 50px;
+    margin: 20px;
+}
+.SousTitreArticle { /*Sous-titre de l'article, inclut dans la section*/
+    color: black;
+    width: 100%;
+    min-height: 100px; /*Hauteur minimale qui fixe le design de l'article et de la section*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h3 { /*Personnalisation de la police du sous-titre */
+    font-size: 200%; /*Taille en % qui permet de s'adapter aux tailles d'écrans*/
+    text-align: left;
+    font-style: oblique;
+    font-weight: normal;
+    text-decoration: underline;
+
+    width: 100%;
+    height: 20px; /*Hauteur du blocs sous-titre*/
+    padding: 0px 50px 0px 50px;
+}
+.Texte { /*Personnalisation de la partie principale du texte de l'article*/
+    font-size: 120%;
+    text-align: justify; /*Alignement justifié*/
+    padding: 0px 20px 0px 20px;
+}
+img { /*Personnalisation des images qui sont incorporées dans les articles*/
+   float: right;
+   width: 30%; /*Largeur optimisée de la preview d'image*/
+   margin: 20px 0px 20px 30px;
+
+}
+ul { /*Liste à puce*/
+    padding-left: 20px;
+}
+li { /*Alignement de la liste à puce avec le reste du texte*/
+    padding-left: 10px;
+}
+footer { /*Pied de page*/
+    color: white;
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+cite { /*Citation des collaborateur dans le pied de page*/
+    border: 7px ridge #0ee2ba; /*Même personnalisation que le titre du site qui rajoute une sorte de symétrie*/
+    width: 50%;
+    font-size: 110%;
+    font-style: italic;
+    background-color: #006951;
+    text-align: center;
+}
